@@ -16,8 +16,8 @@ public class ProjetWebTestApplication {
 	}
 
 	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
+	public String hello(@RequestParam(value = "name", defaultValue = "le Monde") String name) {
+		return String.format("Bonjour %s!", name);
 	}
 
 }
